@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teacher Dashboard — EduBridge</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<div class="shell">
+  <div id="eb-sidebar" class="sidebar"></div>
+  <main>
+    <div id="eb-topbar" class="topbar"></div>
+    <div class="content">
+      <div class="page-head">
+        <div><h1>Welcome back, Ms. Aslam</h1><p>You have 3 submissions waiting for feedback and one assignment due to close tomorrow.</p></div>
+      </div>
+      <div class="stat-row">
+        <div class="stat-card"><div class="stat-top"><span class="stat-label">My Students</span><div class="stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div></div><div class="stat-value">38</div><div class="stat-foot">Grade 9 — Section B</div></div>
+        <div class="stat-card amber"><div class="stat-top"><span class="stat-label">Pending Grading</span><div class="stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg></div></div><div class="stat-value">11</div><div class="stat-foot warn">Submissions to review</div></div>
+        <div class="stat-card sage"><div class="stat-top"><span class="stat-label">Class Average</span><div class="stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3v18h18"/><path d="M18 9l-5 5-4-4-4 4"/></svg></div></div><div class="stat-value">78%</div><div class="stat-foot up">+4% since midterm</div></div>
+        <div class="stat-card"><div class="stat-top"><span class="stat-label">Active Assignments</span><div class="stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div></div><div class="stat-value">6</div><div class="stat-foot">2 close this week</div></div>
+      </div>
+      <div class="grid-2">
+        <div class="panel">
+          <div class="panel-head"><h2>Submissions to Grade</h2><a href="submissions.html">View all &rarr;</a></div>
+                <table>
+        <thead><tr><th>Student</th><th>Assignment</th><th>Submitted</th><th>Status</th><th></th></tr></thead>
+        <tbody>
+<tr><td><div class="cell-main"><div class="cell-avatar">MF</div><div><div class="cell-name">Maria Fatima</div><div class="cell-sub">Roll 9B-14</div></div></div></td><td>Quadratic Equations — Set 3</td><td>Today, 9:14 AM</td><td><span class="pill amber">Not graded</span></td><td><input type="number" placeholder="/100" style="width:64px;padding:6px 8px;border:1px solid var(--border);border-radius:6px;"> <button class="link-btn">Save</button></td></tr>
+<tr><td><div class="cell-main"><div class="cell-avatar">BA</div><div><div class="cell-name">Bilal Ahmed</div><div class="cell-sub">Roll 9B-05</div></div></div></td><td>Quadratic Equations — Set 3</td><td>Yesterday, 6:40 PM</td><td><span class="pill amber">Not graded</span></td><td><input type="number" placeholder="/100" style="width:64px;padding:6px 8px;border:1px solid var(--border);border-radius:6px;"> <button class="link-btn">Save</button></td></tr>
+<tr><td><div class="cell-main"><div class="cell-avatar">NS</div><div><div class="cell-name">Noor us Sabah</div><div class="cell-sub">Roll 9B-22</div></div></div></td><td>Trigonometry Basics</td><td>2 days ago</td><td><span class="pill sage">Graded — 88/100</span></td><td><button class="link-btn">View</button></td></tr>
+<tr><td><div class="cell-main"><div class="cell-avatar">DK</div><div><div class="cell-name">Danyal Khan</div><div class="cell-sub">Roll 9B-09</div></div></div></td><td>Trigonometry Basics</td><td>3 days ago</td><td><span class="pill clay">Late — not graded</span></td><td><input type="number" placeholder="/100" style="width:64px;padding:6px 8px;border:1px solid var(--border);border-radius:6px;"> <button class="link-btn">Save</button></td></tr>
+        </tbody>
+      </table>
+
+        </div>
+        <div class="panel">
+          <div class="panel-head"><h2>My Class — Progress</h2></div>
+          <div class="progress-wrap">
+            <div class="progress-item"><div class="progress-labels"><span>Quadratic Equations</span><span>34/38 submitted</span></div><div class="bar-track"><div class="bar-fill" style="width:89%;"></div></div></div>
+            <div class="progress-item"><div class="progress-labels"><span>Trigonometry Basics</span><span>38/38 submitted</span></div><div class="bar-track"><div class="bar-fill" style="width:100%;background:var(--sage);"></div></div></div>
+            <div class="progress-item"><div class="progress-labels"><span>Lab Report — Motion</span><span>12/38 submitted</span></div><div class="bar-track"><div class="bar-fill" style="width:32%;background:var(--amber);"></div></div></div>
+            <div class="progress-item"><div class="progress-labels"><span>Unit Test Prep Sheet</span><span>3/38 submitted</span></div><div class="bar-track"><div class="bar-fill" style="width:8%;background:var(--clay);"></div></div></div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="hint">Role-Based Student&ndash;Teacher Management System &middot; Teacher area</footer>
+    </div>
+  </main>
+</div>
+<script src="../assets/js/auth.js"></script>
+<script src="../assets/js/layout.js"></script>
+<script>
+  ebGuard('teacher', '../login.html');
+  ebRenderLayout('teacher', 'dashboard.html');
+</script>
+</body>
+</html>

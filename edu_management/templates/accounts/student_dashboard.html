@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Dashboard — EduBridge</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<div class="shell">
+  <div id="eb-sidebar" class="sidebar"></div>
+  <main>
+    <div id="eb-topbar" class="topbar"></div>
+    <div class="content">
+      <div class="page-head">
+        <div><h1>Hi Noor, here's where things stand</h1><p>One assignment is due in 2 days. Your last feedback from Ms. Aslam is ready to view.</p></div>
+      </div>
+      <div class="stat-row">
+        <div class="stat-card"><div class="stat-top"><span class="stat-label">My Teacher</span><div class="stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/><path d="M13 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div></div><div class="stat-value" style="font-size:22px;">Zara Aslam</div><div class="stat-foot">Mathematics</div></div>
+        <div class="stat-card amber"><div class="stat-top"><span class="stat-label">Assignments Due</span><div class="stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div></div><div class="stat-value">2</div><div class="stat-foot warn">Next due in 2 days</div></div>
+        <div class="stat-card sage"><div class="stat-top"><span class="stat-label">Average Grade</span><div class="stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div></div><div class="stat-value">88%</div><div class="stat-foot up">Top 15% of class</div></div>
+        <div class="stat-card"><div class="stat-top"><span class="stat-label">Term Progress</span><div class="stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div></div><div class="stat-value">72%</div><div class="stat-foot">10 of 14 tasks complete</div></div>
+      </div>
+      <div class="grid-2">
+        <div class="panel">
+          <div class="panel-head"><h2>My Assignments</h2><a href="assignments.html">View all &rarr;</a></div>
+                <table>
+        <thead><tr><th>Assignment</th><th>Subject</th><th>Deadline</th><th>Status</th><th></th></tr></thead>
+        <tbody>
+<tr><td>Lab Report — Motion</td><td>Physics</td><td>In 2 days</td><td><span class="pill amber">Not submitted</span></td><td><a class="link-btn" href="submit.html">Submit</a></td></tr>
+<tr><td>Unit Test Prep Sheet</td><td>Mathematics</td><td>In 5 days</td><td><span class="pill amber">Not submitted</span></td><td><a class="link-btn" href="submit.html">Submit</a></td></tr>
+<tr><td>Trigonometry Basics</td><td>Mathematics</td><td>Closed</td><td><span class="pill sage">Graded — 88/100</span></td><td><a class="link-btn" href="results.html">View feedback</a></td></tr>
+<tr><td>Essay — Local Ecosystems</td><td>Biology</td><td>Closed</td><td><span class="pill clay">Submitted late</span></td><td><a class="link-btn" href="results.html">View feedback</a></td></tr>
+        </tbody>
+      </table>
+
+        </div>
+        <div class="panel">
+          <div class="panel-head"><h2>Latest Feedback</h2></div>
+          <div class="memo-list">
+            <div class="memo"><div class="memo-title">Trigonometry Basics — 88/100</div><div class="memo-detail">Strong grasp of identities. Show more working in step 4 next time. &mdash; Ms. Aslam</div><div class="memo-meta">2 days ago</div></div>
+            <div class="memo clay"><div class="memo-title">Essay — Local Ecosystems — 71/100</div><div class="memo-detail">Good research, but submitted after the deadline. Cite sources properly. &mdash; Mr. Rahim</div><div class="memo-meta">1 week ago</div></div>
+            <div class="memo sage"><div class="memo-title">Quiz — Cell Structure — 95/100</div><div class="memo-detail">Excellent work, Noor. Keep this up for the term exam. &mdash; Mr. Rahim</div><div class="memo-meta">2 weeks ago</div></div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="hint">Role-Based Student&ndash;Teacher Management System &middot; Student area</footer>
+    </div>
+  </main>
+</div>
+<script src="../assets/js/auth.js"></script>
+<script src="../assets/js/layout.js"></script>
+<script>
+  ebGuard('student', '../login.html');
+  ebRenderLayout('student', 'dashboard.html');
+</script>
+</body>
+</html>
